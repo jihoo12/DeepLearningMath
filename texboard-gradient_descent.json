@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "f5678d8d-ff9b-474a-9239-258129786529",
+      "title": "Node A",
+      "content": "$$\\nabla f = \\left( \\frac{\\partial f}{\\partial x_1}, \\frac{\\partial f}{\\partial x_2}, \\dots, \\frac{\\partial f}{\\partial x_n} \\right)$$\n",
+      "x": 948,
+      "y": 177,
+      "width": 303,
+      "height": 296
+    },
+    {
+      "id": "93803a3b-6028-472d-84e1-c9eac7050d1f",
+      "title": "Node B",
+      "content": "$$\\theta_{next} = \\theta_{current} - \\eta \\cdot \\nabla J(\\theta)$$\n$\\theta$:업데이트할 가중치\n<br>\n$\\eta$:학습률(learning rate) 한번에 얼마나 멀리 이동할지를 결정하는 보폭\n<br>\n$\\nabla J(\\theta)$ 비용함수의 기울기(미분값)",
+      "x": 520,
+      "y": 173,
+      "width": 298,
+      "height": 297
+    },
+    {
+      "id": "b85e7d92-143f-4c3e-a079-711c4899d455",
+      "title": "Node E",
+      "content": "$f(x,y)=x^2+3xy$일때\n<br>\nx에 대해 편미분 2x+3y\n<br>\ny에 대해 편미분 3x\n<br>\n결과 $\\nabla f$=(2x+3y,3x)",
+      "x": 747,
+      "y": 525.5,
+      "width": 317,
+      "height": 256
+    }
+  ],
+  "connections": [
+    {
+      "fromId": "93803a3b-6028-472d-84e1-c9eac7050d1f",
+      "toId": "f5678d8d-ff9b-474a-9239-258129786529"
+    },
+    {
+      "fromId": "f5678d8d-ff9b-474a-9239-258129786529",
+      "toId": "b85e7d92-143f-4c3e-a079-711c4899d455"
+    },
+    {
+      "fromId": "93803a3b-6028-472d-84e1-c9eac7050d1f",
+      "toId": "b85e7d92-143f-4c3e-a079-711c4899d455"
+    }
+  ]
+}
